@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    /* background-color: #050B2E; */
+    background-color: wheat;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.done{
+    text-decoration: line-through;
+}
+.Maincontainer{
+    height: 600px;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 600px;
+    background-color: #0510619e;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.header{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    border: 2px solid #121A5C;
+    border-radius: 6px;
+    padding:12px 16px;
+    background-color: #121A5C;
+}
+.left{
+    display: flex;
+    width: 75%;
+    gap: 20px;
+    flex-direction: column;
+}
+.left h1{
+    font-size: 2.5rem;
+}
+.progress-container {
+    width: 100%;
+    background-color: #8E8CFF33;
+    border: 1px solid #8E8CFF33;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 5px;
+}
+.progressbar{
+    height: 100%;
+    width: 0%;
+    text-align: center;
+    background-color: #8E8CFF;
+    border-radius: 6px;
+    transition: width 0.4s ease; /* Smooth transition for updates */
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    transition: left 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: #8E8CFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.input_holder{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    gap: 15px;
+}
+.input_holder input{
+    width: 500px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #8E8CFF;
+}
+.input_holder button{
+    padding: 4px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    background-color: #8E8CFF;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.input_holder img{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.input_holder button:hover{
+    background-color: #8E8CFFa1;
+}
+.taskcontainer{
+    display: flex;
+    height: calc(100% - 191.4px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* gap: 6px; */
+}
+.card{
+    display: flex;
+    margin: 10px;
+    padding: 8px 10px;
+    width: 96%;
+    border: 2px solid #8E8CFF;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    accent-color: red; /* Set the desired color */
+    width: 1.5em;
+    height: 1.5em;
+}
+.text{
+    display: flex;
+    align-items: center;
+    margin: 6px;
+    width: 75%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.text2{
+    text-align: center;
+    color: #0510619e;
+    font-weight: 1000;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 6px;    
+}
+::-webkit-scrollbar-track {
+    background: #8E8CFF33;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #8E8CFF;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8E8CFFa1;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+@media (max-width:700px) {
+    .Maincontainer{
+        width: 450px;
+    }
+}

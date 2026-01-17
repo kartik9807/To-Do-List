@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Maincontainer">
+        <div class="header">
+            <div class="left">
+                <h1>To-Do-List</h1>
+                <div class="progress-container">
+                    <div class="progressbar" id="progressBar"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="circle">0/0</div>
+            </div>
+        </div>
+        <div class="input_holder">
+            <input type="text" name="task" id="writeTask" placeholder="Enter your task to do:- " value="">
+            <button type="button" id="addBtn">+</button>
+            <img src="svgs/allDelete.svg" id="allDelete" alt="" width="40" height="40">
+        </div>
+        <div class="taskcontainer">
+            <h1 class="text2">Hurray !!! no pending work</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
